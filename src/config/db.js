@@ -1,11 +1,11 @@
 // Question : Pourquoi créer un module séparé pour les connexions aux bases de données ?
-// Réponse : 
+// Réponse :
 // Question : Comment gérer proprement la fermeture des connexions ?
-// Réponse : 
+// Réponse :
 
-const { MongoClient } = require('mongodb');
-const redis = require('redis');
-const config = require('./env');
+const { MongoClient } = require("mongodb");
+const redis = require("redis");
+const config = require("./env");
 
 let mongoClient, redisClient, db;
 
@@ -22,4 +22,6 @@ async function connectRedis() {
 // Export des fonctions et clients
 module.exports = {
   // TODO: Exporter les clients et fonctions utiles
+  connectMongo,
+  connectRedis,
 };

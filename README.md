@@ -1,60 +1,111 @@
-# Projet de fin de module NoSQL
+# Learning Platform NoSQL
 
-Pour ce projet, vous allez créer une petite API qui va servir de backend à une plateforme d'apprentissage en ligne. J'ai préparé la structure du projet avec une organisation professionnelle du code, comme vous pouvez le constater dans ce dépôt Github.
+Une API backend pour une plateforme d'apprentissage en ligne utilisant une base de données NoSQL.
 
-Commençons par l'organisation pratique :
+## Table des matières
 
-1. Création de votre dépôt :
-   - Sur Github.com
-   - Créez un nouveau dépôt public
-   - Nommez-le "learning-platform-nosql"
-   - Ne l'initialisez pas avec un README pour le moment
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Structure du projet](#structure-du-projet)
+- [Choix techniques](#choix-techniques)
+- [Réponses aux questions](#réponses-aux-questions)
+- [API Endpoints](#api-endpoints)
+- [Tests](#tests)
+- [Captures d'écran](#captures-décran)
 
-2. Configuration de votre environnement local :
-   ```bash
-   # Clonez mon dépôt template (ce dépôt)
-   git clone https://github.com/pr-daaif/learning-platform-template
-   
-   # Renommez le dépôt origin
-   cd learning-platform-template
-   git remote remove origin
-   
-   # Ajoutez votre dépôt comme nouvelle origine
-   git remote add origin https://github.com/[votre-compte]/learning-platform-nosql
-   
-   # Poussez le code vers votre dépôt
-   git push -u origin main
-   ```
+## Installation
 
-3. Installation des dépendances :
-   ```bash
-   npm install
-   ```
+```bash
+# Cloner le projet
+git clone https://github.com/souhailOUARGUI/learning-plateform-nosql.git
 
-Je vous propose une structure de code qui suit les bonnes pratiques de développement. Vous trouverez dans le code des commentaires avec des **questions qui vous guideront dans votre réflexion**. Ces questions sont importantes car elles vous aideront à comprendre les choix d'architecture.
+# Installer les dépendances
+npm install
 
-### Aspects professionnels à noter :
-- Utilisation des variables d'environnement pour la configuration
-- Séparation claire des responsabilités (routes, contrôleurs, services)
-- Gestion propre des connexions aux bases de données
-- Organisation modulaire du code
-- Gestion des erreurs et des cas limites
-- Documentation du code
+# Démarrer le serveur en mode développement
+npm run dev
+```
 
-### Pour le rendu, voici ce que j'attends :
-1. Un dépôt public sur Github avec un historique de commits clair
-2. Un README.md qui explique :
-   - Comment installer et lancer le projet
-   - La structure du projet
-   - Les choix techniques que vous avez faits
-   - Les réponses aux questions posées dans les commentaires
-3. Le code complété avec tous les TODOs implémentés
+## Configuration
 
-### Je vous conseille de procéder étape par étape :
-1. Commencez par lire et comprendre la structure du projet
-2. Répondez aux questions des commentaires dans le README
-3. Implémentez progressivement les TODOs
-4. Testez chaque fonctionnalité au fur et à mesure
-5. Documentez vos choix et vos réflexions en ajoutant des copies d'écrans à votre fichier README.md
+1. Créez un fichier `.env` à la racine du projet
+2. Ajoutez les variables d'environnement suivantes :
 
-#### Bon courage
+```env
+PORT=3000
+MONGODB_URI=votre_uri_mongodb
+```
+
+## Structure du projet
+
+```
+├── src/
+│   ├── config/          # Configuration de l'application
+│   ├── controllers/     # Contrôleurs
+│   ├── middleware/      # Middleware personnalisés
+│   ├── models/         # Modèles de données
+│   ├── routes/         # Routes de l'API
+│   ├── services/       # Logique métier
+│   └── utils/          # Utilitaires
+└── server.js          # Point d'entrée de l'application
+```
+
+## Choix techniques
+
+<!-- [À COMPLETER]
+Expliquez ici vos choix techniques, notamment :
+
+- Le choix de la base de données NoSQL
+- L'architecture du projet
+- Les patterns utilisés
+- Les bibliothèques choisies -->
+
+## Réponses aux questions
+
+[À COMPLETER]
+Ici les questions des commentaires et les réponses détaillées:
+
+### Question 1: [Titre de la question]
+
+[ réponse détaillée]
+
+### Question 2: [Titre de la question]
+
+[ réponse détaillée]
+
+## API Endpoints
+
+### Utilisateurs
+
+<!-- - `GET /api/users` - Récupérer tous les utilisateurs
+- `POST /api/users` - Créer un nouvel utilisateur
+- [Complétez avec vos endpoints] -->
+
+### Cours
+
+<!-- - `GET /api/courses` - Récupérer tous les cours
+- `POST /api/courses` - Créer un nouveau cours
+- [Complétez avec vos endpoints]
+
+[Ajoutez les autres endpoints de votre API] -->
+
+## Captures d'écran
+
+<!--
+[À COMPLETER]
+Ajoutez ici des captures d'écran pertinentes de votre application, par exemple :
+
+- Structure de la base de données
+- Résultats des tests
+- Exemples de requêtes et réponses API
+
+--- -->
+
+## Auteur
+
+Souhail OUARGUI
+
+<!--
+## Licence
+
+Ce projet est sous licence [choisissez votre licence] -->
