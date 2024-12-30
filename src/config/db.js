@@ -14,18 +14,17 @@ let mongoClient, redisClient, db;
 async function connectMongo() {
   // TODO: Implémenter la connexion MongoDB
   // Gérer les erreurs et les retries
-  mongoClient = new MongoClient(config.mongodb.uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  mongoClient.connect((err) => {
-    if (err) {
-      console.error("MongoDB Connection error", err);
+  mongoClient = new MongoClient(config.mongodb.uri);
+  mongoClient
+    .connect((err) => {})
+    .then(() => {
+      db = mongoClient.db(config.mongodb.dbName);
+      console.log("Connected to db");
+    })
+    .catch((err) => {
+      console.error("MongoDB connection error:", err);
       process.exit(1);
-    }
-    db = mongoClient.db(config.mongodb.dbName);
-    console.log("Connected to db");
-  });
+    });
 }
 
 async function connectRedis() {
