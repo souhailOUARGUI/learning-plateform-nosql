@@ -1,5 +1,6 @@
 // Question : Pourquoi créer un module séparé pour les connexions aux bases de données ?
 // Réponse : c'est bien pour centraliser la logique de connexion à un seul endroit, ainsi que ca permet la réutilisabilité de la meme connection dans differentes parties de l'application
+
 // Question : Comment gérer proprement la fermeture des connexions ?
 // Réponse : -> On doit tout d'abord écouter les signaux de fermeture de l'application (SIGTERM, SIGINT)
 // -> et après on ferme les connexions avant l'arret de l'app
