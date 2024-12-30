@@ -10,7 +10,6 @@ Une API backend pour une plateforme d'apprentissage en ligne utilisant une base 
 - [Choix techniques](#choix-techniques)
 - [Réponses aux questions](#réponses-aux-questions)
 - [API Endpoints](#api-endpoints)
-- [Tests](#tests)
 - [Captures d'écran](#captures-décran)
 
 ## Installation
