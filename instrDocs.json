@@ -1,0 +1,33 @@
+[
+  {
+    "firstName": "Alexandre",
+    "lastName": "Dupont",
+    "email": "alex.dupont@formation.com",
+
+    "expertise": ["JavaScript", "Node.js", "MongoDB", "Architecture Web"]
+  },
+
+  {
+    "firstName": "Sarah",
+    "lastName": "Martin",
+    "email": "sarah.martin@formation.com",
+
+    "expertise": ["React", "AWS", "TypeScript", "DevOps"]
+  },
+
+  {
+    "firstName": "Laurent",
+    "lastName": "Bernard",
+    "email": "laurent.bernard@formation.com",
+
+    "expertise": ["Python", "Cybersécurité", "Ethical Hacking", "DevSecOps"]
+  },
+
+  {
+    "firstName": "Marie",
+    "lastName": "Dubois",
+    "email": "marie.dubois@formation.com",
+
+    "expertise": ["Python", "Machine Learning", "Data Analysis", "SQL"]
+  }
+]

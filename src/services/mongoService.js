@@ -38,7 +38,7 @@ async function destroy(req, res, collection, id) {
       if (!data) {
         res.status(404).json({ message: "User not found" });
       } else {
-        res.json({ message: "User deleted sucessfully " });
+        res.json({ message: "Object deleted sucessfully " });
       }
     });
   } catch (error) {
