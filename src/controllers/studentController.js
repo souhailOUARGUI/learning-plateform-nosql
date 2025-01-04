@@ -5,7 +5,10 @@ const redisService = require("../services/redisService");
 
 async function createStudent() {}
 async function getStudent() {}
-async function getStudents() {}
+async function getStudents(req, res) {
+  res.json({ message: "heeeeloooo" });
+  console.log("hello");
+}
 async function updateStudent() {}
 async function deleteStudent() {}
 

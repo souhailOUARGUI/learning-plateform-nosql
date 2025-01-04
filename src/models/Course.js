@@ -3,7 +3,7 @@ const { ObjectId } = require("mongodb");
 
 const Schema = mongoose.Schema;
 
-const courseSchema = Schema(
+const courseSchema = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -25,29 +25,29 @@ const courseSchema = Schema(
       default: "débutant",
     },
     topics: [{ type: String, trim: true }],
-    instructor: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
-    enrolledStudnents: [
-      {
-        student: {
-          type: Schema.Types.ObjectId,
-          ref: "Student",
-        },
-        enrollmentDate: {
-          type: Date,
-          default: Date.now,
-        },
-        progress: {
-          type: Number,
-          default: 0,
-          min: 0,
-          max: 100,
-        },
-      },
-    ],
+    // instructor: {
+    //   type: Schema.Types.ObjectId,
+    //   ref: "User",
+    //   required: true,
+    // },
+    // enrolledStudents: [
+    //   {
+    //     student: {
+    //       type: Schema.Types.ObjectId,
+    //       ref: "Student",
+    //     },
+    //     enrollmentDate: {
+    //       type: Date,
+    //       default: Date.now,
+    //     },
+    //     progress: {
+    //       type: Number,
+    //       default: 0,
+    //       min: 0,
+    //       max: 100,
+    //     },
+    //   },
+    // ],
     price: { type: Number, required: true, min: 0 },
     isPublished: {
       type: Boolean,

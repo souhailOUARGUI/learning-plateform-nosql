@@ -6,6 +6,7 @@
 // -> et après on ferme les connexions avant l'arret de l'app
 
 const { MongoClient } = require("mongodb");
+const mongoose = require("mongoose");
 const redis = require("redis");
 const config = require("./env");
 
@@ -14,11 +15,11 @@ let mongoClient, redisClient, db;
 async function connectMongo() {
   // TODO: Implémenter la connexion MongoDB
   // Gérer les erreurs et les retries
-  mongoClient = new MongoClient(config.mongodb.uri);
-  mongoClient
-    .connect((err) => {})
+  // mongoClient = new MongoClient(config.mongodb.uri);
+  mongoose
+    .connect(config.mongodb.uri)
     .then(() => {
-      db = mongoClient.db(config.mongodb.dbName);
+      // db = mongoClient.db(config.mongodb.dbName);
       console.log("Connected to db");
     })
     .catch((err) => {

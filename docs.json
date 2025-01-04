@@ -1,0 +1,39 @@
+[
+  {
+    "title": "JavaScript Moderne",
+    "description": "Maîtrisez les dernières fonctionnalités de JavaScript et les bonnes pratiques de développement",
+    "duration": 15,
+    "level": "intermédiaire",
+    "topics": ["ES6+", "Promises", "Async/Await", "Modules"],
+    "price": 69.99,
+    "isPublished": true
+  },
+  {
+    "title": "API REST avec Node.js",
+    "description": "Apprenez à construire des APIs REST robustes avec Node.js et Express",
+    "duration": 12,
+    "level": "débutant",
+    "topics": ["Node.js", "Express", "REST", "API Design"],
+    "price": 59.99,
+    "isPublished": true
+  },
+  {
+    "title": "React pour Débutants",
+    "description": "Découvrez React et créez vos premières applications web modernes",
+    "duration": 20,
+    "level": "débutant",
+    "topics": ["React", "JSX", "Components", "Hooks"],
+    "price": 79.99,
+    "isPublished": true
+  },
+
+  {
+    "title": "Python Avancé",
+    "description": "Perfectionnez vos compétences en Python avec des concepts avancés",
+    "duration": 18,
+    "level": "avancé",
+    "topics": ["Decorators", "Generators", "AsyncIO", "Design Patterns"],
+    "price": 89.99,
+    "isPublished": true
+  }
+]
