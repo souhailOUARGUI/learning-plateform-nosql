@@ -22,29 +22,29 @@ const studentSchema = new Schema(
       trim: true,
       lowercase: true,
     },
-    // enrolledCourses: [
-    //   {
-    //     course: { type: Schema.Types.ObjectId, ref: "Course" },
-    //     status: {
-    //       type: String,
-    //       enum: ["active", "completed", "dropped"],
-    //       default: "active",
-    //     },
-    //     progress: {
-    //       type: Number,
-    //       default: 0,
-    //       min: 0,
-    //       max: 100,
-    //     },
-    //     enrollmentDate: {
-    //       type: Date,
-    //       default: Date.now,
-    //     },
-    //     completionDate: {
-    //       type: Date,
-    //     },
-    //   },
-    // ],
+    enrolledCourses: [
+      {
+        course: { type: Schema.Types.ObjectId, ref: "Course" },
+        status: {
+          type: String,
+          enum: ["active", "completed", "dropped"],
+          default: "active",
+        },
+        progress: {
+          type: Number,
+          default: 0,
+          min: 0,
+          max: 100,
+        },
+        enrollmentDate: {
+          type: Date,
+          default: Date.now,
+        },
+        completionDate: {
+          type: Date,
+        },
+      },
+    ],
   },
   {
     Timestamp: true,

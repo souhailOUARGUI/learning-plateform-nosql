@@ -5,10 +5,10 @@ const studentController = require("../controllers/studentController");
 
 //routes pour les etudiants
 
-router.post("/", studentController.createStudent);
 router.get("/", studentController.getStudents);
 router.get("/:id", studentController.getStudent);
-router.delete("/:id", studentController.deleteStudent);
+router.post("/", studentController.createStudent);
 router.patch("/:id", studentController.updateStudent);
+router.delete("/:id", studentController.deleteStudent);
 
 module.exports = router;
