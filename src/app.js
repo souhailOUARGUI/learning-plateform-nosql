@@ -22,6 +22,7 @@ const bodyParser = require("body-parser");
 
 const courseRoutes = require("./routes/courseRoutes");
 const studentRoutes = require("./routes/studentRoutes");
+const instructorsRoutes = require("./routes/instructorRoutes");
 
 const app = express();
 
@@ -37,6 +38,7 @@ async function startServer() {
     // TODO: Monter les routes
     app.use("/courses", courseRoutes);
     app.use("/students", studentRoutes);
+    app.use("/instructors", instructorsRoutes);
 
     // TODO: Démarrer le serveur
     app.listen(config.port, () => {
