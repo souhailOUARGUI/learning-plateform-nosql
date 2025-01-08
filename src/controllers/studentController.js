@@ -17,7 +17,7 @@ async function getStudents(req, res) {
 
 async function getStudent(req, res) {
   try {
-    const student = await mongoService.findOneById(Student, req.body.id);
+    const student = await mongoService.findOneById(Student, req.params.id);
     if (student) {
       res.status(200).json({ student });
     }

@@ -48,7 +48,7 @@ async function createCourse(req, res) {
   }
 }
 async function getCourseStats(req, res) {
-  console.log("hello");
+  // console.log("hello");
   res.json({ message: "Course Stats :) " });
 }
 

@@ -2,6 +2,10 @@
 
 Une API backend pour une plateforme d'apprentissage en ligne utilisant une base de données NoSQL.
 
+## this is the api documentation:
+
+https://documenter.getpostman.com/view/25064146/2sAYJAfyTH
+
 ## Table des matières
 
 - [Installation](#installation)
