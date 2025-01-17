@@ -5,7 +5,7 @@ Une API backend pour une plateforme d'apprentissage en ligne utilisant une base 
 ## Voici la documentation de cet API:
 
 https://documenter.getpostman.com/view/25064146/2sAYJAfyTH
-
+<!--
 ## Table des matières
 
 - [Installation](#installation)
@@ -15,7 +15,7 @@ https://documenter.getpostman.com/view/25064146/2sAYJAfyTH
 - [Réponses aux questions](#réponses-aux-questions)
 - [API Endpoints](#api-endpoints)
 - [Captures d'écran](#captures-décran)
-
+-->
 ## Installation
 
 ```bash
@@ -53,16 +53,7 @@ MONGODB_URI=votre_uri_mongodb
 └── server.js          # Point d'entrée de l'application
 ```
 
-## Choix techniques
-
-<!-- [À COMPLETER]
-Expliquez ici vos choix techniques, notamment :
-
-- Le choix de la base de données NoSQL
-- L'architecture du projet
-- Les patterns utilisés
-- Les bibliothèques choisies -->
-
+<!--
 ## Réponses aux questions
 
 [À COMPLETER]
@@ -75,34 +66,7 @@ Ici les questions des commentaires et les réponses détaillées:
 ### Question 2: [Titre de la question]
 
 [ réponse détaillée]
-
-## API Endpoints
-
-### Utilisateurs
-
-<!-- - `GET /api/users` - Récupérer tous les utilisateurs
-- `POST /api/users` - Créer un nouvel utilisateur
-- [Complétez avec vos endpoints] -->
-
-### Cours
-
-<!-- - `GET /api/courses` - Récupérer tous les cours
-- `POST /api/courses` - Créer un nouveau cours
-- [Complétez avec vos endpoints]
-
-[Ajoutez les autres endpoints de votre API] -->
-
-## Captures d'écran
-
-<!--
-[À COMPLETER]
-Ajoutez ici des captures d'écran pertinentes de votre application, par exemple :
-
-- Structure de la base de données
-- Résultats des tests
-- Exemples de requêtes et réponses API
-
---- -->
+-->
 
 ## Auteur
 
